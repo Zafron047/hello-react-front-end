@@ -11,9 +11,14 @@ const Home = () => {
   }, [dispatch]);
 
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>{ greetingMsg }</p>
+    <div style={{
+      textAlign: 'center', padding: '20px', fontFamily: 'Arial, sans-serif', backgroundColor: '#f2f2f2',
+    }}
+    >
+      <h1 style={{ fontSize: '2rem', color: 'blue' }}>Welcome to Our Page</h1>
+      <p style={{ fontSize: '1rem', color: '#333' }}>
+        {greetingMsg}
+      </p>
     </div>
   );
 };
